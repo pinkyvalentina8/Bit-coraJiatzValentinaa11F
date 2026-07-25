@@ -23,6 +23,7 @@
         h1 {
             text-shadow: 0 0 10px #ae73d1, 0 0 20px #b026ff, 0 0 30px #b026ff;
             color: white;
+            margin: 0;
         }
         .semana {
             background-color: white;
@@ -33,6 +34,14 @@
             border-left: 5px solid #d895ff;
             max-width: 800px;
             text-align: left;
+            transition: transform 0.3s ease;
+        }
+        .semana:hover {
+            transform: translateY(-3px);
+        }
+        .semana h2 {
+            color: rgb(180, 59, 142);
+            margin-top: 0;
         }
         .logo-zoom {
             transition: transform 0.3s ease;
@@ -45,6 +54,14 @@
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        img, video, embed {
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(216, 149, 255, 0.4);
+            margin-top: 10px;
+            max-width: 100%;
         }
         footer {
             display: flex;
@@ -59,23 +76,58 @@
 </head>
 <body>
     <header>
-        <h1>Bitácora segunda y tercera unidad</h1>
+        <h1>Bitácora - Robótica</h1>
     </header>
 
     <main>
-        <h1>Contenido de la página web</h1>
-
         <div class="semana">
-            <h2>Semana 1</h2>
+            <h2>Semana 1: Introducción al Arduino</h2>
             <p>Documento de introducción:</p>
             <embed src="Introducción Arduino.pdf" type="application/pdf" width="100%" height="600px" />
         </div>
 
         <div class="semana">
-            <h2>Semana 6</h2>
+            <h2>Semana 2: Desarrollo de Proyectos</h2>
+            <p>Video demostrativo de la semana 2:</p>
+            <video width="100%" controls>
+                <source src="recursos/img/semana2.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <div class="semana">
+            <h2>Semana 3: Conceptos Avanzados</h2>
+            <p>Imagen demostrativa de la semana 3:</p>
+            <img src="recursos/img/semana3.png" alt="Imagen Semana 3" width="100%">
+        </div>
+
+        <div class="semana">
+            <h2>Semana 4: Sensores y Actuadores</h2>
+            <p>Imagen demostrativa de la semana 4:</p>
+            <img src="recursos/img/semana4.png" alt="Imagen Semana 4" width="100%">
+        </div>
+
+        <div class="semana">
+            <h2>Semana 5: Elaboración de Circuito</h2>
+            <p>Fotografía del circuito ensamblado:</p>
+            <img src="recursos/img/Semana 5 foto.jpeg" alt="Foto del circuito Semana 5" width="100%">
+        </div>
+
+        <div class="semana">
+            <h2>Semana 6: Avances de Robótica</h2>
             <p>Video demostrativo del proyecto:</p>
-            <video width="100%" controls style="border-radius: 10px; box-shadow: 0 0 15px rgba(216, 149, 255, 0.4);">
+            <video width="100%" controls>
                 <source src="recursos/img/pinky.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <div class="semana">
+            <h2>Semana 7: Grabación de Circuito</h2>
+            <p>Muestra final del funcionamiento del circuito:</p>
+            <video width="100%" controls>
+                <source src="recursos/img/videotics.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
             </video>
         </div>
     </main>
